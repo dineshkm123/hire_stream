@@ -1,0 +1,46 @@
+/* WelcomePage.css */
+.welcome-container {
+  text-align: center;
+  padding: 50px;
+}
+
+.title {
+  font-family: "Whisper";
+  color: orange;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2em;
+  font-style: Mina;
+  color: #717171;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #1c128b;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #090f53;
+}
+
+@media (min-width: 400px) {
+  .title {
+    font-size: 4.4em;
+  }
+
+  .description {
+    font-size: 2.5em;
+  }
+}

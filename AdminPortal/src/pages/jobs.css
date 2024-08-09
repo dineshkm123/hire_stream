@@ -1,0 +1,169 @@
+.search {
+  justify-content: center;
+  margin: auto;
+}
+
+.job-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.job-card {
+  background-color: #f5f5f5;
+  color: black;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  width: 560px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  z-index: -1;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.truncated {
+  margin: 0 0 16px;
+  max-height: 3.6em; /* Adjust based on font size and line height */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4; /* Number of lines to display */
+  line-clamp: 4;
+}
+
+.techs {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.techs span {
+  background-color: #979ba4;
+  color: #fff;
+  font-size: smaller;
+  border-radius: 5px;
+  padding: 3px 8px;
+  margin: 3px;
+}
+
+.details-button {
+  background-color: green;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin: 10px;
+}
+
+#searchcgpa {
+  width: 50px;
+  text-align: center;
+}
+
+.details-button:hover {
+  background-color: darkgreen;
+}
+
+.red {
+  background-color: red;
+}
+
+.red:hover {
+  background-color: rgb(207, 1, 1);
+}
+
+.message button {
+  display: inline;
+}
+
+.job-card a {
+  text-decoration: none;
+  margin-top: 12px;
+  /* margin: 3px;
+    padding: 2px; */
+}
+
+.job-card h2 {
+  margin: 40px 0;
+}
+
+.edit,
+.delete {
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  float: right;
+  padding: 2px;
+  background-color: rgb(245, 8, 8);
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.icon {
+  margin-top: 6px;
+}
+
+.edit {
+  background-color: #979ba4;
+}
+
+.red-text {
+  color: red;
+}
+
+.green-text {
+  color: green;
+}
+
+/*Added css foe applied jobs view*/
+.alterwidth {
+  margin: auto;
+  width: 540px;
+  display: flex;
+  justify-content: center;
+}
+.applied-job-table {
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.applied-job-table th {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+}
+.applied-job-table td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 0px solid #ddd;
+}
+
+@media (max-width: 400px) {
+  .job-card {
+    width: 80vw;
+  }
+
+  .message button {
+    display: block;
+  }
+}
